@@ -41,11 +41,11 @@
 - 別途post installスクリプトで最新バージョンCommand Line Toolsをインストール　（[参考コメント](https://community.jamf.com/t5/jamf-pro/using-jamf-to-deploy-xcode-13-2-1-for-macos-12-3-monterey/m-p/273267/highlight/true#M248780)）  
   
 作成したスクリプト：  
-- [XcodeConfiguration](https://magichat.jamfcloud.com/view/settings/computer-management/scripts/416?tab=general)
-- [XcodePostInstallCommandLineTools](https://magichat.jamfcloud.com/view/settings/computer-management/scripts/417?tab=general)
+- XcodeConfiguration.zsh
+- XcodePostInstallCommandLineTools.sh
   
 処理中にスリープしないようにする処理
-- [setSleepTime](https://magichat.jamfcloud.com/view/settings/computer-management/scripts/415?tab=general)
+- setSleepTime.zsh
 
 ### ⑥ ポリシーの作成
 ④で作成した PKG ファイルと⑤のスクリプトを用いてポリシーを作成
@@ -71,12 +71,7 @@
 ## 検証結果
 ・時間的にはPolicy、Self Serviceは2-3時間かかりましたが問題なく、インストールとスクリプト実行ができ、アプリを開けました。  
 ・スクリプト自体も大丈夫ですが、メジャーアップデートの時は正常に動くかの確証は必要です。  
-・MHでは書かれてないスクリプトの上、複雑なので、修正が必要な場合であれば難しそう。
 
 ## ログ
 XcodeConfigurationスクリプトのインストールログは以下の階層に保存さる：  
 ```/Library/Logs/Xcode/XCodeInstall.log```
-
-## 参考
-- [Self Service実施](https://magichat.jamfcloud.com/policies.html?id=748&o=r)
-- [Policy実施](https://magichat.jamfcloud.com/policies.html?id=747&o=r)
