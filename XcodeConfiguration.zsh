@@ -65,7 +65,6 @@ echo " ------- "
 echo "All Users add to developer group at:  $(date)"
 /usr/sbin/dseditgroup -o edit -a everyone -t group _developer
 
-
 # If you have multiple versions of Xcode installed, specify which one you want to be current.
 echo " ------- "
 echo "Setting /Applications/Xcode as current Xcode at:  $(date)"
