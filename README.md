@@ -11,7 +11,6 @@
 ### ③ パッケージ化
 検証で、最初はComposerを使ってPKGの作成を何回も試したところ、いつも失敗で終わりました。  
 スレッドで書いてあったパケージ化ツール、[WhiteBoxのPackagesアプリ](http://s.sudre.free.fr/Software/Packages/about.html)で成功になりました。  
-※ 今のところ、上記のアプリは Ventura でサポートされておらず、実行できません。Venturaの前は正常に動作します。 
 <details>
   <summary><i>手順（クリックして）</i></summary>
   <ul>
